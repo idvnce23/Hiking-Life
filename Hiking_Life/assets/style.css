@@ -1,0 +1,1041 @@
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bitter', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+.page{
+    overflow: hidden;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container
+=======================*/
+.container {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+/* Header
+=======================*/
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f3f3e3;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.logo{
+    margin: 20px;
+}
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.nav__link{
+    margin: 35px;
+    color: #32455f;
+    font-family: Nunito;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    border: 13px solid transparent;
+}
+.nav__link:hover{
+    border-bottom: 13px solid #32455f;
+    font-weight: 700;
+    overflow: hidden;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+.search__area{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-color: transparent;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.search__img{
+    margin: -2px -40px;
+    font-size: 30px;
+}
+.burger{
+    margin: 20px;
+}
+.burger__line{
+    margin: 10px;
+    width: 45px;
+    font-size: 0;
+    border-bottom: 5px solid #32455f;
+}
+.nav--nav__burger{
+    display: none;
+}
+.burger:hover .burger__line{
+    margin: 0;
+}
+/* .burger:hover .nav--nav__burger{
+    position: relative;
+    display: block;
+    padding-top: 30px;
+    right: 10px;
+} */
+
+/* Intro
+=======================*/
+.intro{
+    padding: 50px;
+    height: 100vh;
+    background-image: url("./img/header/1.png");
+    background-size: cover;
+}
+.intro__inner{
+    display: block;
+    margin-top: 200px;
+    width: 33%;
+}
+.intro__title{
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.intro__subtitle{
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 38px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.border{
+    margin: -30px -20px;
+}
+
+/* Recover
+=======================*/
+.recover{
+    padding: 50px;
+    height: auto;
+    background-color: #fbfbf5;
+}
+.recover__title{
+    margin-left: 60px;
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 58px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4.37px;
+    line-height: 58.33px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.recover__title:after{
+    content: "";
+    display: block;
+    width: 95px;
+    height: 9px;
+    background-color: #32455f;
+    margin: 60px 0;
+}
+.recover__inner{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.recover__col{
+    display: block;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.re_col__up{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.re_col__up:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 9px;
+    background-color: #32455f;
+    margin: 60px 0;
+}
+.day{
+    display: block;
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+}
+.day--day1{
+    font-family: "Bebas Neue";
+    font-size: 42px;
+    font-weight: 700;
+}
+.recover__img{
+    margin: 50px;
+}
+.re_col__down{
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 38px;
+    font-weight: 400;
+}
+.down-txt{
+    font-size: 21px;
+}
+.down__pgs{
+    display: inline-flex;
+    align-items: center;
+}
+i{
+    margin-right: 10px;
+}
+.recover__cross1{
+    position: relative;
+    left: 95px;
+    right: 0;
+}
+.recover__cross2{
+    position: relative;
+    left: 65px;
+    top: 600px;
+    right: 0;
+}
+
+/* Guide
+=======================*/
+.guide{
+    padding: 50px;
+    height: auto;
+    background-image: url("./img/guide/1.png");
+    background-size: cover;
+}
+.guide__inner{
+    display: block;
+}
+.guide__title{
+    width: 75%;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 90px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 20px;
+}
+.guide__subtitle{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+.subtitle__txt{
+    width: 35%;
+}
+.date:after{
+    content: "";
+    display: block;
+    width: 95px;
+    height: 9px;
+    background-color: #fbfbf5;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.date{
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.guide__btn{
+    margin-top: 60px;
+    padding: 5px 20px;
+    color: #32455f;
+    border-radius: 50px;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.guide__btn:hover{
+    text-decoration: underline;
+    opacity: .7;
+}
+.border__guide-up{
+    position: relative;
+    left: 850px;
+}
+.border__guide-down{
+    margin: 0px -30px;
+}
+
+/* Climb
+=======================*/
+.climb{
+    padding: 30px;
+    height: 100vh;
+    background-image: url("./img/climb/1.png");
+    background-size: cover;
+}
+.climb__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.climb__col{
+    display: block;
+}
+.climb__title{
+    width: 30%;
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.climb__txt-title{
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.climb__txt{
+    width: 50%;
+    color: #32455f;
+    font-family: Bitter;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 45.83px;
+    text-align: left;
+    margin: 30px 0;
+}
+.climb__txt:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    opacity: .4;
+    background-color: #564b67;
+    margin: 30px 0;
+}
+.climb__subtitle{
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 30px 0;
+}
+.climb__date{
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+.climb__price{
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+}
+.climb__cross1{
+    position: relative;
+    left: 95px;
+    right: 0;
+}
+.climb__guide-up{
+    position: relative;
+    top: -840px;
+    left: 188px;
+}
+.climb__guide-down{
+    position: relative;
+    top: -555px;
+    left: -79px;
+}
+
+/* Places
+=======================*/
+.places{
+    padding: 30px;
+    height: 100vh;
+    display: block;
+    text-align: left;
+    margin-bottom: 300px;
+}
+.places__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.place__col{
+    display: block;
+    margin: 50px;
+}
+.places__title{
+    width: 28%;
+    color: #564b67;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.places-up{
+    position: relative;
+    top: -235px;
+    left: 350px;
+}
+.places-down{
+    position: relative;
+    top: -48px;
+    left: -63px;
+}
+.places__img{
+    border-radius: 50%;
+    margin: 20px;
+}
+.places-col__title{
+    margin: 20px;
+    color: #32455f;
+    font-family: "Bebas Neue";
+    font-size: 42px;
+    font-weight: 400;
+    text-align: left;
+}
+.places__txt{
+    margin: 20px;
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+}
+.places__txt:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    opacity: .4;
+    background-color: #564b67;
+    margin: 30px 0;
+}
+.places__loc{
+    margin: 20px;
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 5px;
+}
+.places__btn{
+    position: relative;
+    left: 650px;
+    padding: 1px 30px;
+    border-radius: 50px;
+    color: #fbfbf5;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #564b67;
+    text-decoration: none;
+}
+.places__btn:hover{
+    text-decoration: underline;
+    opacity: .7;
+
+}
+
+/* Hike
+=======================*/
+.hike{
+    padding: 30px;
+    height: auto;
+    display: block;
+    text-align: left;
+    background-image: url("./img/hike/1.png");
+    background-size: cover;
+}
+.hike__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.hike__col1{
+    margin-top: 250px;
+}
+.hike__date{
+    margin: 10px;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.hike__date:after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+.hike__btn{
+    padding: 1px 30px;
+    border-radius: 50px;
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.hike__btn:hover{
+    text-decoration: underline;
+    opacity: .7;
+
+}
+.hike__title{
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 100px;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase;
+}
+.hike__subtitle{
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase;
+}
+.hike-up{
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+.hike-down{
+    position: relative;
+    top: 80px;
+    left: -190px;
+}
+
+/* Camp
+=======================*/
+.camp{
+    padding: 30px;
+    height: auto;
+    display: block;
+    text-align: left;
+}
+.camp__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.camp__title{
+    position: relative;
+    top: -123px;
+    left: 45px;
+    color: #5f6551;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.camp__title:after{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 10px;
+    background-color: #5f6551;
+    margin: 30px 0;
+}
+.camp__col{
+    display: block;
+    margin: 40px;
+    text-align: center;
+}
+.camp_col__title{
+    margin: 20px;
+    color: #5f6551;
+    font-family: "Bebas Neue";
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.camp_col__txt{
+    margin: 20px;
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+}
+.camp_col__btn{
+    margin: 20px;
+    padding: 1px 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #5f6551;
+    text-decoration: none;
+}
+.camp_col__btn:hover{
+    text-decoration: underline;
+    opacity: .7;
+
+}
+.camp__cross{
+    position: relative;
+    top: 400px;
+}
+
+/* Ice
+=======================*/
+.ice{
+    padding: 30px;
+    height: 150vh;
+    background-image: url("./img/ice/1.png");
+    background-size: cover;
+}
+.ice__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.ice__col1{
+    display: flex;
+}
+.ice__col2{
+    position: relative;
+    left: 580px;
+}
+.ice__title{
+    width: 30%;
+    color: #5f6551;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.ice__txt-title{
+    color: #5f6551;
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.ice__txt{
+    width: 50%;
+    color: #5f6551;
+    font-family: Bitter;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 45.83px;
+    text-align: left;
+    margin: 30px 0;
+}
+.ice__txt:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    opacity: .4;
+    background-color: #564b67;
+    margin: 30px 0;
+}
+.ice__subtitle{
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 30px 0;
+}
+.ice__date{
+    color: #5f6551;
+    font-family: "Bebas Neue";
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+.ice__price{
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: left;
+}
+.ice__cross1{
+    position: relative;
+    left: 105px;
+    right: 0;
+}
+.ice__guide-up{
+    position: relative;
+    top: -542px;
+    left: -25px;
+}
+.ice__guide-down{
+    position: relative;
+    top: -700px;
+    left: 300px;
+}
+
+/* Discount
+=======================*/
+.discount{
+    padding: 30px;
+    height: auto;
+    background-image: url("./img/discount/1.png");
+    background-size: cover;
+}
+.discount__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.discount__col{
+    display: block;
+}
+.discount__title{
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 58px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.discount__title:after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 10px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+.discount__date{
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+.discount__vol{
+    display: flex;
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 75px;
+    font-weight: 400;
+    text-align: left;
+}
+.off{
+    margin: 77px 16px;
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 45px;
+    font-weight: 400;
+    text-align: left;
+}
+.discount__txt{
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 38px;
+    font-weight: 400;
+    text-align: left;
+}
+.discount__time{
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Mount
+=======================*/
+.mount{
+    padding: 30px;
+    height: auto;
+    background-image: url("./img/mount/1.png");
+    background-size: cover;
+}
+.mount__inner{
+    display: block;
+    text-align: center;
+}
+.mount__title{
+    margin: 0 auto;
+    width: 70%;
+    color: #fbfbf5;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mountbtn{
+    margin: 30px auto;
+}
+.mount__btn{
+    padding: 1px 30px;
+    border-radius: 50px;
+    color: #32455f;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.mount__btn:hover{
+    text-decoration: underline;
+    opacity: .7;
+
+}
+.mount__img{
+    position: relative;
+    top: -290px;
+    left: 1485px;
+}
+
+/* Footer
+=======================*/
+.footer{
+    padding: 30px;
+    height: auto;
+    background-image: url("./img/footer/1.png");
+    background-size: cover;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__col1{
+    display: block;
+    width: 40%;
+}
+.footer__title{
+    margin: 20px;
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+.footer__txt{
+    margin: 20px;
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+}
+.footer__logo{
+    margin: 20px;
+}
+.footer__col2{
+    margin: 70px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.col2__item{
+    display: block;
+}
+.col2__title{
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+.footer__nav{
+    margin-top: 30px;
+    display: block;
+    width: 30%;
+}
+.footer__nav__link{
+    color: #5f6551;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+}
+.footer__nav__link:hover{
+    text-decoration: underline;
+    opacity: .7;
+}
+
+/* Media
+=======================*/
+@media (max-width: 1275px) {
+    /* nav */
+    .nav{
+        display: none;
+    }
+    .search__area{
+        padding: 10px 110px;
+    }
+
+    /* intro */
+    .intro__title{
+        font-size: 54px;
+    }
+
+    /* guide */
+    .guide__title{
+        font-size: 79px;
+    }
+    .border__guide-up{
+        left: 767px;
+        top: 35px;
+    }
+    .border__guide-down{
+        position: relative;
+        top: -55px;
+        left: 2px;
+    }
+
+    /* climb */
+    .climb__title{
+        font-size: 44px;
+    }
+    .climb__guide-up{
+        top: -585px;
+        left: 286px;
+    }
+    .climb__guide-down{
+        top: -547px;
+        left: -60px;
+    }
+
+    /* places */
+    .places__title{
+        width: 70%;
+        font-size: 70px;
+    }
+    .places-up{
+        top: -108px;
+        left: 567px;
+    }
+
+    /* ice */
+    .ice__title{
+        width: 50%;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1040) {
+
+    /* imtro */
+    .intro__title{
+        font-size: 35px;
+    }
+
+    /* guiede */
+    .guide__title{
+        font-size: 45px;
+    }
+    .border__guide-up{
+        left: 567px;
+        top: 22px;
+    }
+    .border__guide-down{
+        top: -39px;
+        left: 10px;
+    }
+
+    /* climb */
+    .climb__title{
+        font-size: 33px;
+    }
+    .climb__guide-up{
+        top: -619px;
+        left: 212px;
+    }
+    .climb__guide-down{
+        top: -575px;
+        left: -63px;
+    }
+
+    /* places */
+    .places{
+        height: auto;
+    }
+    .places__inner{
+        display: block;
+    }
+}
